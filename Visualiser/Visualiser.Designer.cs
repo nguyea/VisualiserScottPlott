@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Visualiser));
             statusStrip1 = new StatusStrip();
-            btnPlot = new ToolStripSplitButton();
             toolStripStatusLabel1 = new ToolStripStatusLabel();
             menuStrip1 = new MenuStrip();
             fileToolStripMenuItem = new ToolStripMenuItem();
@@ -46,22 +44,12 @@
             // 
             // statusStrip1
             // 
-            statusStrip1.Items.AddRange(new ToolStripItem[] { btnPlot, toolStripStatusLabel1 });
+            statusStrip1.Items.AddRange(new ToolStripItem[] { toolStripStatusLabel1 });
             statusStrip1.Location = new Point(0, 428);
             statusStrip1.Name = "statusStrip1";
             statusStrip1.Size = new Size(892, 22);
             statusStrip1.TabIndex = 1;
             statusStrip1.Text = "statusStrip1";
-            // 
-            // btnPlot
-            // 
-            btnPlot.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnPlot.Image = (Image)resources.GetObject("btnPlot.Image");
-            btnPlot.ImageTransparentColor = Color.Magenta;
-            btnPlot.Name = "btnPlot";
-            btnPlot.Size = new Size(44, 20);
-            btnPlot.Text = "Plot";
-            btnPlot.ButtonClick += btnPlot_ButtonClick;
             // 
             // toolStripStatusLabel1
             // 
@@ -146,7 +134,6 @@
 
         #endregion
         private StatusStrip statusStrip1;
-        private ToolStripSplitButton btnPlot;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem fileToolStripMenuItem;
